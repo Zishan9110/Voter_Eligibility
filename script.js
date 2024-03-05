@@ -5,7 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const day = parseInt(document.getElementById('day').value);
         const month = parseInt(document.getElementById('month').value) - 1; // JavaScript months are 0 indexed
         const year = parseInt(document.getElementById('yaer').value); // Corrected id to 'year'
-        
+          
+        if (name === '')  {
+            alert("Please enter your name.");
+            return; // Stop further execution
+        }
+        else if(adhar === ''){
+            alert("Please enter your Aadhar number.");
+        }
+        else if( isNaN(day) || isNaN(month) || isNaN(year)){
+          alert("Please enter your birthdate."); 
+        }
         const birthDate = new Date(year, month, day);
         const currentDate = new Date();
         
