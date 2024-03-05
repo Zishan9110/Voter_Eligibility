@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert("Sorry" + name + ", you are not eligible to vote.");
         }
 
-        // window.location.reload(); // Remove or comment out this line
+         window.location.reload();
     });
 });
